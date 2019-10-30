@@ -9,7 +9,7 @@ ${svg.replace('<svg ', '<svg class={styleClass} ')}
   export let styleClass = ''
 </script>
 `
-const handleComponentName = slug => slug.replace(/\-(\d+)/, '$1')
+const handleComponentName = slug => slug === '500px' ? 'five-hundred-px' : slug.replace(/\-(\d+)/, '$1')
 
 const icons = Object.entries(simpleIcons).map(([ name, { slug, svg } ]) => ({
   name,
