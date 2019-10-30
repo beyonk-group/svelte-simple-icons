@@ -37,6 +37,17 @@ Use the svg name when importing, and convert it to {PascalCase}Icon.
 For instance, `.NET` on the creators site has an SVG name of `dot-net.svg`, so should be imported as `<DotNetIcon />`
 See all icons here: https://simpleicons.org/
 
+### Exceptions
+
+The one notable exception to the rule above is the 500px icon:
+
+```html
+    <script>
+    	import { FiveHundredPxIcon } from 'svelte-simple-icons'
+    </script>
+    
+    <FiveHundredPxIcon />
+```
 
 ### Styling
 You can add CSS classes icons by passing a `styleClass` attribute:
